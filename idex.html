@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Jogo da velha...</title>
+    <style>
+        td{
+            font-size: 100px;
+            background-color: blue;
+            padding: 20px;
+        }
+        td:hover{
+            background-color: aqua;
+        }
+    </style>  
+</head>
+<body>
+    <h1>Jogo da velha...</h1>
+    <p>Vamos jogar!</p>
+    <table>
+        <tr>
+            <td onclick="marcar(this)"></td>
+            <td onclick="marcar(this)"></td>             
+            <td onclick="marcar(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="marcar(this)"></td>
+            <td onclick="marcar(this)"></td>
+            <td onclick="marcar(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="marcar(this)"></td>
+            <td onclick="marcar(this)"></td>
+            <td onclick="marcar(this)"></td>
+        </tr>
+    </table> 
+    <script>
+        let jogador ="x" 
+        function marcar(td) {
+                td.innerHTML=jogador
+                if(jogador=="x"){
+                jogador = "0"
+                } else {jogador ="x"
+                } 
+        
+        }
+    </script>
+</body>
+</html>
